@@ -30,7 +30,7 @@
                 <small
                   ><em
                     >Raising awareness, sharing stories, and supporting
-                    action.</em
+                    action</em
                   ></small
                 >
               </p></a
@@ -53,8 +53,124 @@
     <br />
     <br />
     <br />
-    <h3 align="center">
-      This page is currently under construction. Thank you for your patience.
-    </h3>
+    <h1 align="center">STAY CONNECTED</h1>
+    <br />
+    <form action="https://httpbin.org/post" method="post" align="center">
+      <label for="firstName">First Name:</label>
+      <input
+        id="firstName"
+        name="firstName"
+        type="text"
+        placeholder="First Name"
+        required
+      />
+      <br />
+      <br />
+      <label for="lastName">Last Name:</label>
+      <input
+        id="lastName"
+        name="lastName"
+        type="text"
+        placeholder="Last Name"
+        required
+      />
+      <br />
+      <br />
+      <label for="email">Email:</label>
+      <input
+        id="email"
+        name="email"
+        type="email"
+        placeholder="you@example.com"
+        required
+      />
+      <br />
+      <br />
+      <label for="phone">Phone:</label>
+      <input
+        id="phone"
+        name="phone"
+        type="tel"
+        placeholder="(123)‑456‑7890"
+      /><br /><br />
+      <label for="bday">Birthdate:</label>
+      <input id="bday" name="bday" type="date" /><br /><br />
+      <fieldset
+        style="border: 1px solid black; display: inline-block; color: black"
+      >
+        <legend>Preferred Contact:</legend>
+        <input
+          id="prefEmail"
+          name="prefContact"
+          type="radio"
+          value="Email"
+          checked
+        />
+        <label for="prefEmail">Email</label>
+        <input id="prefPhone" name="prefContact" type="radio" value="Phone" />
+        <label for="prefPhone">Phone</label>
+      </fieldset>
+      <br />
+      <br />
+      <fieldset
+        style="border: 1px solid black; display: inline-block; color: black"
+      >
+        <legend>Topics of Interest:</legend>
+        <input id="news" name="topics" type="checkbox" value="News" />
+        <label for="news">News Updates</label><br />
+        <input id="events" name="topics" type="checkbox" value="Events" />
+        <label for="events">Events / Rallies</label><br />
+        <input
+          id="alerts"
+          name="topics"
+          type="checkbox"
+          value="Action Alerts"
+        />
+        <label for="alerts">Action Alerts</label>
+      </fieldset>
+      <br />
+      <br />
+      <label for="region">Your Region:</label>
+      <select id="region" name="region">
+        <option value="" selected disabled>Select one…</option>
+        <option value="NA">North America</option>
+        <option value="EU">Europe</option>
+        <option value="ME">Middle East</option>
+        <option value="AP">Asia‑Pacific</option>
+        <option value="AF">Africa</option>
+        <option value="LA">Latin America</option>
+      </select>
+      <br />
+      <br />
+      <label for="message">Let us know why you want updates</label><br />
+      <textarea
+        id="message"
+        name="message"
+        rows="4"
+        cols="40"
+        placeholder="Share your thoughts and give any feedback…"
+      ></textarea>
+      <br />
+      <br />
+      <input type="submit" value="Sign Me Up!" />
+    </form>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <footer>
+      <table align="center">
+        <tr>
+          <td>
+            <p align="center"><small>(123) 456-7890</small></p>
+            <p align="center"><small>info@voicesforpalestine.org</small></p>
+            <p align="center">
+              <small>123 Solidarity Way, Justice City, US 00000</small>
+            </p>
+          </td>
+        </tr>
+      </table>
+    </footer>
   </body>
 </html>
