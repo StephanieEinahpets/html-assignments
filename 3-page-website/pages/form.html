@@ -15,7 +15,7 @@
         sans-serif;
     "
   >
-    <nav>
+    <header>
       <table bgcolor="#3c3833" width="100%">
         <tr>
           <td>
@@ -48,70 +48,90 @@
           <td><a href="./form.html">Sign up</a></td>
         </tr>
       </table>
-    </nav>
+    </header>
+
     <br />
     <br />
     <br />
     <br />
     <h1 align="center">STAY CONNECTED</h1>
     <br />
+
     <form action="https://httpbin.org/post" method="post" align="center">
-      <label for="firstName">First Name:</label>
-      <input
-        id="firstName"
-        name="firstName"
-        type="text"
-        placeholder="First Name"
-        required
-      />
+      <div>
+        <label for="first-name">First Name:</label>
+        <input
+          id="first-name"
+          name="first-name"
+          type="text"
+          placeholder="First Name"
+          required
+        />
+      </div>
+
       <br />
       <br />
-      <label for="lastName">Last Name:</label>
-      <input
-        id="lastName"
-        name="lastName"
-        type="text"
-        placeholder="Last Name"
-        required
-      />
+
+      <div>
+        <label for="last-name">Last Name:</label>
+        <input
+          id="last-name"
+          name="last-name"
+          type="text"
+          placeholder="Last Name"
+          required
+        />
+      </div>
       <br />
       <br />
-      <label for="email">Email:</label>
-      <input
-        id="email"
-        name="email"
-        type="email"
-        placeholder="you@example.com"
-        required
-      />
+
+      <div>
+        <label for="email">Email:</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="you@example.com"
+          required
+        />
+      </div>
       <br />
       <br />
-      <label for="phone">Phone:</label>
-      <input
-        id="phone"
-        name="phone"
-        type="tel"
-        placeholder="(123)‑456‑7890"
-      /><br /><br />
-      <label for="bday">Birthdate:</label>
-      <input id="bday" name="bday" type="date" /><br /><br />
+
+      <div>
+        <label for="phone">Phone:</label>
+        <input
+          id="phone"
+          name="phone"
+          type="tel"
+          placeholder="(123)‑456‑7890"
+        />
+      </div>
+      <br />
+      <br />
+      <div>
+        <label for="bday">Birthdate:</label>
+        <input id="bday" name="bday" type="date" /><br /><br />
+      </div>
+
       <fieldset
         style="border: 1px solid black; display: inline-block; color: black"
       >
         <legend>Preferred Contact:</legend>
         <input
-          id="prefEmail"
-          name="prefContact"
+          id="pref-contact"
+          name="pref-contact"
           type="radio"
           value="Email"
           checked
         />
-        <label for="prefEmail">Email</label>
-        <input id="prefPhone" name="prefContact" type="radio" value="Phone" />
-        <label for="prefPhone">Phone</label>
+        <label for="pref-email">Email</label>
+        <input id="pref-phone" name="pref-contact" type="radio" value="Phone" />
+        <label for="pref-phone">Phone</label>
       </fieldset>
       <br />
       <br />
+
       <fieldset
         style="border: 1px solid black; display: inline-block; color: black"
       >
@@ -128,32 +148,38 @@
         />
         <label for="alerts">Action Alerts</label>
       </fieldset>
+
       <br />
       <br />
-      <label for="region">Your Region:</label>
-      <select id="region" name="region">
-        <option value="" selected disabled>Select one…</option>
-        <option value="NA">North America</option>
-        <option value="EU">Europe</option>
-        <option value="ME">Middle East</option>
-        <option value="AP">Asia‑Pacific</option>
-        <option value="AF">Africa</option>
-        <option value="LA">Latin America</option>
-      </select>
+      <div>
+        <label for="region">Your Region:</label>
+        <select id="region" name="region">
+          <option value="" selected disabled>Select one…</option>
+          <option value="NA">North America</option>
+          <option value="EU">Europe</option>
+          <option value="ME">Middle East</option>
+          <option value="AP">Asia‑Pacific</option>
+          <option value="AF">Africa</option>
+          <option value="LA">Latin America</option>
+        </select>
+      </div>
       <br />
       <br />
-      <label for="message">Let us know why you want updates</label><br />
-      <textarea
-        id="message"
-        name="message"
-        rows="4"
-        cols="40"
-        placeholder="Share your thoughts and give any feedback…"
-      ></textarea>
+      <div>
+        <label for="message">Let us know why you want updates</label><br />
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          cols="40"
+          placeholder="Share your thoughts and give any feedback…"
+        ></textarea>
+      </div>
       <br />
       <br />
       <input type="submit" value="Sign Me Up!" />
     </form>
+
     <br />
     <br />
     <br />
